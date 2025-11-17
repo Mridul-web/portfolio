@@ -1,1 +1,120 @@
-s
+body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #f5f5f5;
+			margin: 0;
+			padding: 0;
+		}
+
+		
+		#Heading {
+			text-align: center;
+			color: #333333;
+			margin-top: 20px;
+		}
+
+		
+		nav {
+			background-color: #333333;
+			padding: 10px 0;
+			margin-top: 10px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 0px;
+			margin: 0;
+			text-align: center;
+		}
+
+		nav li {
+			display: inline;
+			margin: 0 40px;
+		}
+
+		nav a {
+			text-decoration: none;
+			color: white;
+			padding: 5px 10px;
+		}
+
+		nav a:hover {
+			background-color: #555555;
+		}
+
+		
+		#profile_picture {
+			display: block;
+			margin: 20px auto;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			border: 2px solid #333333;
+		}
+
+		#Description {
+			text-align: center;
+			margin-bottom: 20px;
+			font-size: 18px;
+		}
+
+		table {
+			margin: 0 auto 30px auto;
+			border-collapse: collapse;
+			width: 80%;
+			max-width: 600px;
+			background-color: white;
+		}
+
+		caption {
+			font-weight: bold;
+			margin-bottom: 10px;
+			font-size: 18px;
+		}
+
+		th, td {
+			border: 1px solid #cccccc;
+			padding: 8px;
+			text-align: center;
+		}
+
+		th {
+			background-color: #eeeeee;
+		}
+
+		h2 {
+			text-align: center;
+			color: #444444;
+		}
+
+		#Contact_Details {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		form {
+			width: 80%;
+			max-width: 500px;
+			margin: 0 auto 40px auto;
+			background-color: white;
+			padding: 15px;
+			border: 1px solid #dddddd;
+		}
+
+		label {
+			display: block;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+
+		textarea {
+			width: 100%;
+			height: 60px;
+			padding: 5px;
+			box-sizing: border-box;
+		}
+
+		input[type="text"] {
+			width: 100%;
+			padding: 8px;
+			margin-top: 5px;
+			box-sizing: border-box;
+		}s
