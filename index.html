@@ -1,160 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio</title>
-	<link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/favicon.jpg" type="image/jpg">
 </head>
 <body>
 
-	<h1 id="Heading">About</h1>
+    <header>
+        <h1 id="Heading">Portfolio</h1>
 
-	<nav>
-		<ul>
-			<li><a href="#Heading">About</a></li>
-			<li><a href="#Education">Education</a></li>
-			<li><a href="#Projects">Projects</a></li>
-			<li><a href="#Contact">Contact</a></li>
-			<li><a href="#Queries">Queries</a></li>
+        <nav>
+            <ul>
+                <li><a href="#Heading">About</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Queries">Queries</a></li>
+            </ul>
+        </nav>
+        <h2>About</h2>
+    </header>
 
-		</ul>
-	</nav>
-     <img id="profile_picture" src="./images/image.jpeg">
+    <main>
 
-     <div id="Description">
-     	
-     	<span>My name is Mridul Bhattarai</span>
+        <section id='Description'>
+            <figure>
+                <img id="profile_picture" src="./images/image2.jpeg" alt="Photo of Mridul Bhattarai">
+                <figcaption id="fullname">Mridul Bhattarai</figcaption>
+            </figure>
 
-     </div>
+            <p id="Bio">My name is Mridul Bhattarai. I am cybersecurity enthusiast studying at Herald College Kathmandu affiliated from University of Wolverhampton. I have major interest in Ethical Hacking and Network Analysis.</p>
+        </section>
 
-     <br>
+        <section id="Education">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Grade</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SEE</td>
+                        <td>A+</td>
+                        <td>2079</td>
+                    </tr>
+                    <tr>
+                        <td>10+2 SLC</td>
+                        <td>A+</td>
+                        <td>2081</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-     <table>
-     	<caption id="Education">
-     		Education
-     	</caption>
+        <section id="Projects">
+            <h2>My Projects</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Overview</th>
+                        <th>Use</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Attendance System 201</td>
+                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlpJ3FuituS--CGhw2jOiKKqOzAijLO5WDCg&s"></td>
+                        <td>Retina Scan Attendance</td>
+                        <td>2079</td>
+                    </tr>
+                    <tr>
+                        <td>Biomolecules diffuser</td>
+                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAXOgGfD3UAjRSGLoR8AG-ARyYZw9F7nlS9Q&s"></td>
+                        <td>Combines Hydrocarbons</td>
+                        <td>2081</td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio website</td>
+                        <td><img id="Web_portfolio" src="./images/portfolio.jpeg"></td>
+                        <td>Personal Info </td>
+                        <td>2081</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-     	<thead>
-     		<tr>
-     			<th>
-     				Degree
-     			</th>
-     			<th>
-     				Grade
-     			</th>
-     			<th>
-     				Year
-     			</th>
-     		</tr>
-     	</thead>
-     	<tbody>
-     		<tr>
-     			<td>
-     				SEE
-     			</td>
+        <section id="Contact">
+            <h2>Contact Me</h2>
+            <section id="Contact_Details">
+                <address>
+                    Phone: 9812345678<br>
+                    Tel: +012344298<br>
+                    Email: <a href="mailto:mridul1244@gmail.com">mridul1244@gmail.com</a>
+                </address>
+            </section>
+        </section>
 
-     			<td>
-     				A+
-     			</td>
-     			<td>
-     				2079
-     			</td>
+        <section id="Queries">
+            <h2>For Queries</h2>
 
-     		</tr>
+            <form action="/Contact.submit" method="POST">
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text">
+                <br>
 
-     		<tr>
-     			<td>
-     			10+2 SLC
-     		</td>
-     		<td>
-     			A+
-     		</td>
-     		<td>
-     			2081
-     		</td>
-     		</tr>
-     	</tbody>
-     </table>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email">
+                <br>
 
-     <section id="Projects">
-     	
-     	<table>
-     	<caption id="My_Projects">
-     		My Projects
-     	</caption>
+                <label for="query">Your Queries:</label>
+                <textarea id="query" name="query" rows="4" cols="40"></textarea>
+                <br>
 
-     	<thead>
-     		<tr>
-     			<th>
-     				Project Name
-     			</th>
-     			<th>
-     				Use
-     			</th>
-     			<th>
-     				Year
-     			</th>
-     		</tr>
-     	</thead>
-     	<tbody>
-     		<tr>
-     			<td>
-     				Attendance System 201
-     			</td>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
 
-     			<td>
-     				Retina Scan Attendance
-     			</td>
-     			<td>
-     				2079
-     			</td>
+    </main>
 
-     		</tr>
-
-     		<tr>
-     			<td>
-     			Biomolecules diffuser
-     		</td>
-     		<td>
-     			Combines Hydrocarbons
-     		</td>
-     		<td>
-     			2081
-     		</td>
-     		</tr>
-     	</tbody>
-     </table>
-
-     </section>
-
-     <h2 id="Contact">Contact Me</h2>
-
-     <div id="Contact_Details">
-     	
-     	<span>Phone No: 9812345678</span>
-     	<br>
-     	<span>Tel.no: +012344298</span>
-     	<br>
-     	<span>Email: mridul1244@gmail.com</span>
-
-     </div>
-
-     <h2 id="Queries">For Queries</h2>
-
-     <form action="/Contact.submit" method="POST">
-     	<label for="name">Name:</label>
-     	<textarea></textarea>
-     	<br>
-     	<label for="Email">Email:</label>
-     	<textarea></textarea>
-     	<br>
-     	<br>
-     	<input type="text" name="Queries" placeholder="Your Queries">
-     	<br>
-     	<br>
-     	<button type="submit">Submit</button>
-
+    <footer>
+    	November 2025
+    </footer>
 
 </body>
 </html>
