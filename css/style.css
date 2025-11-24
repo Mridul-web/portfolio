@@ -5,10 +5,22 @@ body {
 			padding: 0;
 		}
 
+		#video_background {
+    		position: fixed;      /* stays in place even when scrolling */
+    		top: 0;
+    		left: 0;
+    		min-width: 100%;
+    		min-height: 100%;
+    		width: auto;
+    		height: auto;
+    		z-index: -1;          /* put it behind everything */
+    		object-fit: cover;    /* crop to cover the screen */
+		}
+
 		
 		#Heading {
 			text-align: center;
-			color: #333333;
+			color: white;
 			margin-top: 20px;
 		}
 
@@ -45,10 +57,10 @@ body {
 		}
 
 		#fullname {
-
 			display: flex;
 			justify-content: center;
 			font-weight: bold;
+			color: white;
 		}
 
 		#profile_picture {
@@ -66,6 +78,7 @@ body {
     		text-align: justify;   
     		line-height: 1.6;    
     		font-size: 18px;
+    		color: white;
 		}
 
 		table {
@@ -102,12 +115,13 @@ body {
 
 		h2 {
 			text-align: center;
-			color: #444444;
+			color: white;
 		}
 
 		#Contact_Details {
 			text-align: center;
 			margin-bottom: 20px;
+			color: white;
 		}
 		form {
 			width: 80%;
@@ -153,6 +167,14 @@ body {
     		transform: translateY(-1px);
 		}
 
+		footer {
+			margin-left: 10px;
+			margin-bottom: 15px;
+			font-family: cursive;
+			font-weight: bold;
+			color: whitesmoke;
+		}
+
 		@media (max-width: 600px) {
 
     body {
@@ -167,7 +189,7 @@ body {
 
     nav ul {
         display: flex;
-        flex-direction: column;   /* stack menu items */
+        flex-direction: column;
         align-items: center;
         gap: 8px;
     }
